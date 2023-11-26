@@ -45,7 +45,8 @@ def test_get_employees_by_dept1():
 # Test case 5: get_employees_by_dept with department 'Sales'
 def test_get_employees_by_dept2():
     result = []
-    # Create an answer list using a list comprehension to select specific elements
+    # Create an answer list using a list comprehension to select specific elements -1 is the last element
+
     answer = [employee_info.employee_data[index] for index in [0, -1]]
     # Call the function with the specified department
     result = employee_info.get_employees_by_dept('Sales')
